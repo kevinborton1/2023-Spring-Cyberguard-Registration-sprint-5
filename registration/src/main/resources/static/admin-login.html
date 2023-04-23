@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trident Tech Home Page</title>
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <script src="http://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="js/admin-login.js"></script>
+  
+</head>
+
+<body>
+
+  <nav>
+    <img id="ttcLogo" src="img/ttcLogo.png" alt="Trident Tech Logo">
+  </nav>
+  <div id="container">
+    <div id="admin-login">
+      <form id="admin-login">
+        <label for="username">Username:</label>
+        <input type="email" id="username" name="username" placeholder="FirstnameLastname@my.tridenttech.edu" required>
+        <label for="password">Password:&nbsp;</label>
+        <input type="password" id="password" name="password" placeholder="Password"><br>
+        <input class="adminBtns" id="loginBtn" type="button" value="Login">        
+      </form>
+    </div>
+    <div id="find-student" style="display: none;">
+      <form id="find-student-form">
+        <label for="search">Search by ID or Email:</label>
+        <input type="text" id="search" name="search" placeholder="Search">
+        <button type="button" id="searchBtn">Search</button>
+      </form>
+    </div>
+    <div id="student-info" style="display: none;">
+      <h2>Student Information</h2>
+      <p id="student-name"></p>
+      <p id="student-email"></p>
+
+        
+        <div id="class-enrollment">
+          <h3>Add/Drop Classes</h3>
+          <label for="class-select">Select a class:</label>
+          <select id="class-select">
+            <!-- Populate this select element with available classes -->
+          </select>
+          <button type="button" id="add-class-btn">Add Class</button>
+          <button type="button" id="drop-class-btn">Drop Class</button>
+        </div>
+        
+        <div id="grade-assignment">
+          <h3>Assign Grades</h3>
+          <label for="completed-class-select">Select a completed class:</label>
+          <select id="completed-class-select">
+            <!-- Populate this select element with completed classes -->
+          </select>
+          <label for="grade-select">Select a grade:</label>
+          <select id="grade-select">
+            <option value="A">A</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+            <option value="D">D</option>
+            <option value="F">F</option>
+          </select>
+          <button type="button" id="assign-grade-btn">Assign Grade</button>
+        </div>
+      </div>
+      
+      <!-- Add more fields as needed -->
+    </div>
+
+  </div>
+  
+
+  <footer>
+    <p>Copyright © 2023 Cybergaurd Group</p>
+  </footer>
+</body>
+
+</html>

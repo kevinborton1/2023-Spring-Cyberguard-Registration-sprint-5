@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trident Tech User Information Page</title>
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <script src="http://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="js/user.js"></script>
+
+</head>
+
+<body class="user">
+
+  <nav>
+    <a href="https://www.tridenttech.edu/" target="_blank">
+      <img id="ttcLogo" src="img/ttcLogo.png" alt="Trident Tech Logo">
+    </a>
+    <a href="student-home.html">
+      <img id="userLogo" src="img/user.png" alt="User Logo">
+    </a>
+  </nav>
+  <div id="container">
+    <div id="user">
+      <p class="center">Student ID: <span class="box center student-id"></span> Email Address: <span id="student-email"
+          class="box"></span></p>
+      <p>First Name: <span id="student-first-name" class="box"></span></p>
+      <p>Last Name: <span id="student-last-name" class="box"></span></p>
+      <h1 id="user-heading">Major ID: <span class="student-major-id"></span> <span
+          class="student-major-info"><span>Major Name: </span><span class="student-major-name"></span></span></h1>
+      <table id=courses-table>
+        <thead>
+          <tr>
+            <th>Enrolled Courses</th>
+            <th>Needed Courses</th>
+            <th>Taken Courses</th>
+          </tr>
+        </thead>
+        <tbody id="user-table-body">
+          <tr>
+            <td class="enrolled-courses"></td>
+            <td class="needed-courses"></td>
+            <td class="taken-courses"></td>
+          </tr>
+        </tbody>
+      </table>
+      <table id="test-courses">
+        <thead>
+          <tr>
+            <th>Enrolled Courses</th>
+          </tr>
+        </thead>
+        <tbody id="test-table-body">
+        </tbody>
+      </table>
+      </table>
+
+    </div>
+  </div>
+  <footer>
+    <p>Copyright © 2023 Cybergaurd Group</p>
+  </footer>
+
+</body>
+
+</html>

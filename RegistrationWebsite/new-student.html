@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trident Tech Home Page</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <script src="http://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/color/jquery.color-2.2.0.js"
+        integrity="sha256-gvMJWDHjgDrVSiN6eBI9h7dRfQmsTTsGU/eTT8vpzNg=" crossorigin="anonymous"></script>
+    <script src="js/newStudent.js"></script>
+</head>
+
+<body class="newStudent">
+
+    <nav>
+        <a href="https://www.tridenttech.edu/" target="_blank">
+            <img id="ttcLogo" src="img/ttcLogo.png" alt="Trident Tech Logo">
+        </a>
+        <h1 id="navTitle"></h1>
+    </nav>
+
+    <div id="container">
+        <div id="Registor">
+            <form id="newStudent">
+                <label for="firstName">First Name:</label><br>
+                <input type="text" name="firstName" id="firstName" placeholder="First">
+
+                <label for="lastName">Last Name:</label><br>
+                <input type="text" name="lastName" id="lastName" placeholder="Last">
+
+                <label for="newPassword">Make a Password:</label><br>
+                <input type="password" id="newPassword" name="newPassword" placeholder="Password">
+
+                <label for="confirmPassword">Confirm Password:</label><br>
+                <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm Password">
+
+                <input class="studentBtns" type="button" id="registerBtn" value="Register">
+
+                <p id="formMessage"></p>
+            </form>
+            <div id="welcome"></div>
+        </div>
+        <div class="button-container">
+            <ul id="majors"></ul>
+            <ul id="requirements"></ul>
+        </div>
+    </div>
+
+
+
+
+    <footer>
+        <p>Copyright © 2023 Cybergaurd Group</p>
+    </footer>
+</body>
+
+</html>

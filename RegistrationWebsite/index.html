@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trident Tech Home Page</title>
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <script src="http://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="js/login.js"></script>
+</head>
+
+<body class="login">
+
+  <nav>
+    <a href="https://www.tridenttech.edu/" target="_blank">
+      <img id="ttcLogo" src="img/ttcLogo.png" alt="Trident Tech Logo">
+    </a>
+  </nav>
+  <div id="container">
+    <div id="login">
+      <form id="login-form">
+        <label for="username">Username:</label>
+
+        <input type="email" id="username" name="username" placeholder="FirstnameLastname@my.tridenttech.edu" required>
+
+        <label for="password">Password:&nbsp;</label>
+
+        <input type="password" id="password" name="password" placeholder="Password"><br>
+
+        <input class="studentBtns" id="loginBtn" type="button" value="Login">
+
+        <input class="studentBtns" id="newStudentBtn" type="button" value="New student?">
+
+        <p id="formMessage"></p>
+      </form>
+      <div id="welcome"></div>
+    </div>
+  </div>
+  <footer>
+    <p>Copyright © 2023 Cybergaurd Group</p>
+  </footer>
+</body>
+
+</html>
